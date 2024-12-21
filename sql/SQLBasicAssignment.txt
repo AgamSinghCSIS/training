@@ -1,0 +1,104 @@
+1. CREATE A TABLE CALLED EMP With below properties 
+
+Col Name	  	Data Type        Constraint ? 
+emp_id    	  	number           Primary Key 
+first_name 		string         	 NOT NULL  
+last_name  		string 
+email			string           NOT NULL
+phone_number	string           NOT NULL
+dept_id			number			 Foreign Key     (reference = DEPARTMENT.department_id)
+address_id		number			 Foreign Key     (reference = ADDRESS.add_id)
+blood_group		string
+dob				date 
+doj				date 
+dot				date 
+created_ts		timestamp 
+reference		string 
+role			string 
+salary			float 
+band			number 
+reports_to      number   	            
+
+2. CREATE A TABLE CALLED ADDRESS With below properties 
+
+Col Name	  	Data Type        Constraint ? 
+add_id			number			 Primary Key
+country         string 
+state           string 
+city			string			
+street 			string
+zipcode 		number 
+pre_known_add 	json
+created_ts		timestamp
+last_updated_ts	timestamp
+
+3. CREATE A TABLE CALLED DEPARTMENT With below properties 
+
+Col Name	  			Data Type        Constraint ? 
+department_id			number			 Primary Key 
+department_name			string
+department_code			char(4)          NOT NULL 
+address_id              number           Foreign Key     (reference = ADDRESS.add_id)
+dept_head_id            number           NOT NULL
+
+
+4. Insert valid data into ADDRESS Table 
+
+all the columns should be populated
+
+5. Insert data into DEPARTMENT Table
+
+all the columns should be populated
+
+
+6. Insert data into EMP Table
+
+all the columns should be populated
+
+
+7. Update data in EMP , ADDRESS & DEPARTMENT
+
+update example for each table 
+
+8. DELETE DATA EMP , ADDRESS & DEPARTMENT
+
+delete example for each table 
+
+9. DROP Column reports_to from EMP Table 
+
+10. DROP column dept_head_id from DEPARTMENT Table 
+
+11. Change EMP.band column to STRING Type 
+
+12. Find out EMP Age by using EMP.dob column 
+
+13. Print todays date 
+
+14. Find out EMP experience with this company by using  EMP.doj column
+
+15. Add column EMP.comment_col to EMP table 
+
+16. Add column DEPARTMENT.comment_col to DEPARTMENT table 
+
+17. Add column ADDRESS.comment_col to ADDRESS table 
+
+18. Truncate all the tables 
+
+19. Create a view on top of EMP , DEPARTMENT & ADDRESS Tables 
+
+I need data like below 
+
+EMP.emp_id 
+if EMP.last_name is not null then concat(EMP.first_name , ' ' , EMP.last_name) else EMP.first_name as name 
+concat(street, ', ', city, ', ', state, ', ', country, zipcode) as adress 
+DEPARTMENT.department_name as dept_name 
+EMP.salary as salary 
+
+
+20. DROP All tables 
+
+
+
+
+
+
