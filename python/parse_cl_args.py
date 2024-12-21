@@ -1,10 +1,9 @@
-import sys
-
+import argparse
 def parser():
-    if len(sys.argv) > 1:
-        mystr = sys.argv[1]
-        for item in mystr.split():
-            print(f"{item}")
-
+    parser = argparse.ArgumentParser()
+    parser.add_argument("input", type=str, help='Provide a prompt to split')
+    args = parser.parse_args()
+    for word in args.input.split():
+        print(word)
 if __name__ == "__main__":
-    parser()
+   parser()
