@@ -1,0 +1,11 @@
+OrderID,CustomerName,Gender,Product,Category,Quantity,Price,OrderDate,City
+1001,John Doe,Male,Laptop,Electronics,1,1200,12/1/2024,New York
+1002,Jane Smith,Woman,Headphones,Electronics,2,150,12/2/2024,San Francisco
+1003,Bob Brown,Man,Book,Books,3,20,12/3/2024,Los Angeles
+1004,Lisa White,F,Shoes,Fashion,1,85,12/4/2024,Chicago
+1005,David Black,M,Smartphone,Electronics,1,800,12/5/2024,Houston
+1006,Sarah Green,Female,Jacket,Fashion,2,120,12/6/2024,Phoenix
+1007,Tom Harris,Man,Desk,Furniture,1,300,12/7/2024,Seattle
+1008,Nina Patel,Female,Chair,Furniture,4,75,12/8/2024,Miami
+1009,Emma Wilson,F,Cooking Pot,Home Appliances,2,60,12/9/2024,Atlanta
+1010,Chris Taylor,M,Tablet,Electronics,1,400,12/10/2024,Dallas

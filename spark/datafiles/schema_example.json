@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Alice",
+        "age": 30,
+        "month": "05",
+        "day": "15",
+        "year":"1993",
+        "salary": 75000.50
+    },
+    {
+        "id": 2,
+        "name": "Bob",
+        "age": 45,
+        "month": "02",
+        "day": "20",
+        "year":"1978",
+        "salary": 125000.75
+    },
+    {
+        "id": 3,
+        "name": "Charlie",
+        "age": 28,
+        "month": "10",
+        "day": "30",
+        "year":"1995",
+        "salary": 58000.00
+    },
+    {
+        "id": 4,
+        "name": "Diana",
+        "age": 35,
+        "month": "07",
+        "day": "12",
+        "year":"1999",
+        "salary": 92000.25
+    }
+]
