@@ -1,9 +1,0 @@
-{
-	"name": "selectiva-project-adf",
-	"location": "eastus",
-	"identity": {
-		"type": "SystemAssigned",
-		"principalId": "e8bd49f2-c451-44f2-990f-1a0926f6395a",
-		"tenantId": "5eb1134f-cde9-4436-91ed-3998abe8137b"
-	}
-}
