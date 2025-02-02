@@ -1,0 +1,57 @@
+{
+	"name": "pl_ingestion_selectiva",
+	"properties": {
+		"activities": [
+			{
+				"name": "splitFromRaw Notebook",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/agampaul.s@outlook.com/Ingestion/01-Splitting the csv files"
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_AzureDBx_selectiva_project",
+					"type": "LinkedServiceReference"
+				}
+			},
+			{
+				"name": "ADLS to DBx Staging Tables",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "splitFromRaw Notebook",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/agampaul.s@outlook.com/Ingestion/02-ADLS to DBx Stage tables"
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_AzureDBx_selectiva_project",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2025-01-24T00:12:44Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

@@ -1,0 +1,19 @@
+{
+	"name": "ds_silver_layer_home",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_selectiva",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "edw",
+				"fileSystem": "silver"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
